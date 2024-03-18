@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+
+.divBg {
+    overflow: hidden;
+    position: relative;
+}
+
+.imgBg {
+    min-height: 100%;
+    min-width: 1024px;
+    opacity: 0.6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+    width: 480px;
+    border-radius: 10px;
+    background: rgb(137,101,146);
+    background: linear-gradient(180deg, rgb(185, 136, 198) 0%, rgb(146, 44, 169) 100%);
+    margin: 100px auto;
+    padding: 10px;
+    box-shadow: 0 0 100px 5px;
+}
+
+header {
+    width: 480px;
+    margin: 10px auto; 
+    margin-bottom: 50px;
+}
+
+header img {
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+}
+
+.headerForm {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 18px;
+    font-size: 10px;
+}
+
+
+.headerForm img {
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.headerForm h1 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-bottom: 30px;
+    height: 30px;
+}
+
+form input {
+    border: none;
+    border-radius: 5px;
+    color: #231942;
+    height: 30px;
+    padding: 10px;
+}
+
+.botaoSubmit {
+    display: none;
+}
+
+.botaoAdd {
+    margin-right: 65px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+}
+
+.botaoAdd:hover {
+    cursor: pointer;
+    height: 35px;
+    box-shadow: 0 0 2px;
+}
+
+
+h3 {
+    border-top: 2px solid #23194232;
+    border-bottom: 2px solid #23194232;
+    padding: 10px;
+}
+
+h3:hover {
+    color: #231942;
+    cursor: pointer;
+}
+
+h3.checked {
+    color: rgb(0, 72, 0);
+    text-decoration: line-through lightgrey;
+}
+
+#botaoHoje {
+    color: black;
+    border-radius: 50%;
+    border: none;
+    height: 10px;
+    width: 10px;
+    margin-left: 7px;
+    background-color: #850909;
+}
+
+.containerLi {
+    margin-bottom: 40px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 50px;
+    list-style: none;
+    padding: 5px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.listaHoje {
+    display: none;
+}
+
+#botaoDel {
+    margin: 0 20% 0 auto;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #850909;
+    color: white;
+    font-size: 16px;
+}
+
+#botaoDel:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px;
+}
+
+#botaoDel.checked, #botaoHoje.checked {
+    background-color: green;
+}
+
+li.checked {
+    color: lightgrey;
+    text-decoration: line-through lightgrey;
+}
+
+footer {
+    padding: 7px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: lighter;
+
+}

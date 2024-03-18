@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Organizze - Do today</title>
+    <link rel="icon" type="image/x-icon" href="images/organizze-ico.png">
+</head>
+<body>
+    <div class="divBg">
+        <img class="imgBg" src="background (1).png" alt="Background design">
+        <header>
+            <img src="organizze-logo.png" alt="Organizze Logo">
+        </header>  
+        <div class="container">
+        <div class="headerForm">
+                <img src="Kakashi.jpg" alt="Foto de perfil">
+                <h1>Afazeres ✏️</h1>   
+            </div>
+            <form>
+                <label for="tarefa">Nova tarefa:</label>
+                <input id="tarefa" class="itemTxt" itype="text" placeholder="Ex: comprar par de tênis" required>
+                <img class="botaoAdd" src="add-icon.png" type="submit" alt="Botão adicionar à lista">
+            </form>
+            <div class="containerLi">
+                <h3>Hoje<button id="botaoHoje" class="checked"></button></h3>
+                <ul class="listaHoje">
+                </ul>    
+            </div>
+            <footer>
+                &copy; Desenvolvido por <u>Endriw Xavier</u> <br>(aluno Full Stack Python - Ebac)
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
